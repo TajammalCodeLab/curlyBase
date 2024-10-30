@@ -6,30 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1FCEFF3F2CD2E61A00B297E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEFF372CD2E61A00B297E9 /* AppDelegate.swift */; };
+		1FCEFF402CD2E61A00B297E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEFF3C2CD2E61A00B297E9 /* SceneDelegate.swift */; };
+		1FCEFF412CD2E61A00B297E9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEFF3D2CD2E61A00B297E9 /* LoginView.swift */; };
+		1FCEFF422CD2E61A00B297E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCEFF382CD2E61A00B297E9 /* Assets.xcassets */; };
+		1FCEFF442CD2E61A00B297E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCEFF3B2CD2E61A00B297E9 /* LaunchScreen.storyboard */; };
+		1FCEFF472CD2E6D300B297E9 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEFF462CD2E6D300B297E9 /* ProductView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1FCEFF0F2CD2DD1800B297E9 /* curlyBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = curlyBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FCEFF372CD2E61A00B297E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FCEFF382CD2E61A00B297E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FCEFF392CD2E61A00B297E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FCEFF3A2CD2E61A00B297E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FCEFF3C2CD2E61A00B297E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1FCEFF3D2CD2E61A00B297E9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1FCEFF462CD2E6D300B297E9 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1FCEFF212CD2DD1900B297E9 /* Exceptions for "curlyBase" folder in "curlyBase" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 1FCEFF0E2CD2DD1800B297E9 /* curlyBase */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		1FCEFF112CD2DD1800B297E9 /* curlyBase */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				1FCEFF212CD2DD1900B297E9 /* Exceptions for "curlyBase" folder in "curlyBase" target */,
-			);
-			path = curlyBase;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1FCEFF0C2CD2DD1800B297E9 /* Frameworks */ = {
@@ -45,7 +40,7 @@
 		1FCEFF062CD2DD1800B297E9 = {
 			isa = PBXGroup;
 			children = (
-				1FCEFF112CD2DD1800B297E9 /* curlyBase */,
+				1FCEFF3E2CD2E61A00B297E9 /* curlyBase */,
 				1FCEFF102CD2DD1800B297E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +51,28 @@
 				1FCEFF0F2CD2DD1800B297E9 /* curlyBase.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1FCEFF3E2CD2E61A00B297E9 /* curlyBase */ = {
+			isa = PBXGroup;
+			children = (
+				1FCEFF452CD2E62200B297E9 /* App delegates */,
+				1FCEFF3D2CD2E61A00B297E9 /* LoginView.swift */,
+				1FCEFF462CD2E6D300B297E9 /* ProductView.swift */,
+				1FCEFF3B2CD2E61A00B297E9 /* LaunchScreen.storyboard */,
+				1FCEFF382CD2E61A00B297E9 /* Assets.xcassets */,
+				1FCEFF392CD2E61A00B297E9 /* Info.plist */,
+			);
+			path = curlyBase;
+			sourceTree = "<group>";
+		};
+		1FCEFF452CD2E62200B297E9 /* App delegates */ = {
+			isa = PBXGroup;
+			children = (
+				1FCEFF3C2CD2E61A00B297E9 /* SceneDelegate.swift */,
+				1FCEFF372CD2E61A00B297E9 /* AppDelegate.swift */,
+			);
+			path = "App delegates";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +89,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				1FCEFF112CD2DD1800B297E9 /* curlyBase */,
 			);
 			name = curlyBase;
 			packageProductDependencies = (
@@ -122,6 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCEFF422CD2E61A00B297E9 /* Assets.xcassets in Resources */,
+				1FCEFF442CD2E61A00B297E9 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +148,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCEFF472CD2E6D300B297E9 /* ProductView.swift in Sources */,
+				1FCEFF3F2CD2E61A00B297E9 /* AppDelegate.swift in Sources */,
+				1FCEFF402CD2E61A00B297E9 /* SceneDelegate.swift in Sources */,
+				1FCEFF412CD2E61A00B297E9 /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1FCEFF3B2CD2E61A00B297E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FCEFF3A2CD2E61A00B297E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1FCEFF232CD2DD1900B297E9 /* Debug */ = {
