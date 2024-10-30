@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		1FCEFF422CD2E61A00B297E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCEFF382CD2E61A00B297E9 /* Assets.xcassets */; };
 		1FCEFF442CD2E61A00B297E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCEFF3B2CD2E61A00B297E9 /* LaunchScreen.storyboard */; };
 		1FCEFF472CD2E6D300B297E9 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEFF462CD2E6D300B297E9 /* ProductView.swift */; };
+		4D25C78B4AE06384446BD26D /* Pods_curlyBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1069E3BE3B0ACAD2CBC0F608 /* Pods_curlyBase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0439147D7B42548046A81C4B /* Pods-curlyBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-curlyBase.debug.xcconfig"; path = "Target Support Files/Pods-curlyBase/Pods-curlyBase.debug.xcconfig"; sourceTree = "<group>"; };
+		1069E3BE3B0ACAD2CBC0F608 /* Pods_curlyBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_curlyBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCEFF0F2CD2DD1800B297E9 /* curlyBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = curlyBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCEFF372CD2E61A00B297E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FCEFF382CD2E61A00B297E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		1FCEFF3C2CD2E61A00B297E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1FCEFF3D2CD2E61A00B297E9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1FCEFF462CD2E6D300B297E9 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		750B832672510577E8C25D77 /* Pods-curlyBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-curlyBase.release.xcconfig"; path = "Target Support Files/Pods-curlyBase/Pods-curlyBase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D25C78B4AE06384446BD26D /* Pods_curlyBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				1FCEFF3E2CD2E61A00B297E9 /* curlyBase */,
 				1FCEFF102CD2DD1800B297E9 /* Products */,
+				DA276550DCD306BF91F3608D /* Pods */,
+				9E9567314C1C3E2682652638 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,24 @@
 			path = "App delegates";
 			sourceTree = "<group>";
 		};
+		9E9567314C1C3E2682652638 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1069E3BE3B0ACAD2CBC0F608 /* Pods_curlyBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA276550DCD306BF91F3608D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0439147D7B42548046A81C4B /* Pods-curlyBase.debug.xcconfig */,
+				750B832672510577E8C25D77 /* Pods-curlyBase.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,17 +107,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FCEFF222CD2DD1900B297E9 /* Build configuration list for PBXNativeTarget "curlyBase" */;
 			buildPhases = (
+				4E999F12A3552FDA085FCA84 /* [CP] Check Pods Manifest.lock */,
 				1FCEFF0B2CD2DD1800B297E9 /* Sources */,
 				1FCEFF0C2CD2DD1800B297E9 /* Frameworks */,
 				1FCEFF0D2CD2DD1800B297E9 /* Resources */,
+				DCAFCF96D44608738C0C2696 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = curlyBase;
-			packageProductDependencies = (
-			);
 			productName = curlyBase;
 			productReference = 1FCEFF0F2CD2DD1800B297E9 /* curlyBase.app */;
 			productType = "com.apple.product-type.application";
@@ -121,7 +146,6 @@
 			);
 			mainGroup = 1FCEFF062CD2DD1800B297E9;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 1FCEFF102CD2DD1800B297E9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E999F12A3552FDA085FCA84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-curlyBase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCAFCF96D44608738C0C2696 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-curlyBase/Pods-curlyBase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-curlyBase/Pods-curlyBase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-curlyBase/Pods-curlyBase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1FCEFF0B2CD2DD1800B297E9 /* Sources */ = {
@@ -171,6 +237,7 @@
 /* Begin XCBuildConfiguration section */
 		1FCEFF232CD2DD1900B297E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0439147D7B42548046A81C4B /* Pods-curlyBase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -202,6 +269,7 @@
 		};
 		1FCEFF242CD2DD1900B297E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 750B832672510577E8C25D77 /* Pods-curlyBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

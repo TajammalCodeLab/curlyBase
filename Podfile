@@ -6,6 +6,6 @@ target 'curlyBase' do
   use_frameworks!
 
   # Pods for curlyBase
-    pod 'lottie-ios'
+  pod 'lottie-ios'
 
 end

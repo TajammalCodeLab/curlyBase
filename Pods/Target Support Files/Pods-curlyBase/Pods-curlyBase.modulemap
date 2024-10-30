@@ -1,0 +1,6 @@
+framework module Pods_curlyBase {
+  umbrella header "Pods-curlyBase-umbrella.h"
+
+  export *
+  module * { export * }
+}
