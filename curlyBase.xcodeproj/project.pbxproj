@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		1FCEFF422CD2E61A00B297E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCEFF382CD2E61A00B297E9 /* Assets.xcassets */; };
 		1FCEFF442CD2E61A00B297E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCEFF3B2CD2E61A00B297E9 /* LaunchScreen.storyboard */; };
 		1FCEFF472CD2E6D300B297E9 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEFF462CD2E6D300B297E9 /* ProductView.swift */; };
+		1FCEFF4B2CD2FDB300B297E9 /* btnLoading.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FCEFF4A2CD2FDB300B297E9 /* btnLoading.json */; };
+		1FCEFF4D2CD2FDFF00B297E9 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEFF4C2CD2FDFF00B297E9 /* Button.swift */; };
 		4D25C78B4AE06384446BD26D /* Pods_curlyBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1069E3BE3B0ACAD2CBC0F608 /* Pods_curlyBase.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		1FCEFF3C2CD2E61A00B297E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1FCEFF3D2CD2E61A00B297E9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1FCEFF462CD2E6D300B297E9 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		1FCEFF4A2CD2FDB300B297E9 /* btnLoading.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = btnLoading.json; sourceTree = "<group>"; };
+		1FCEFF4C2CD2FDFF00B297E9 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		750B832672510577E8C25D77 /* Pods-curlyBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-curlyBase.release.xcconfig"; path = "Target Support Files/Pods-curlyBase/Pods-curlyBase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,10 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				1FCEFF452CD2E62200B297E9 /* App delegates */,
-				1FCEFF3D2CD2E61A00B297E9 /* LoginView.swift */,
-				1FCEFF462CD2E6D300B297E9 /* ProductView.swift */,
-				1FCEFF3B2CD2E61A00B297E9 /* LaunchScreen.storyboard */,
-				1FCEFF382CD2E61A00B297E9 /* Assets.xcassets */,
+				1FCEFF492CD2FCDD00B297E9 /* Views */,
+				1FCEFF482CD2FCB000B297E9 /* Assets */,
 				1FCEFF392CD2E61A00B297E9 /* Info.plist */,
 			);
 			path = curlyBase;
@@ -80,6 +82,26 @@
 				1FCEFF372CD2E61A00B297E9 /* AppDelegate.swift */,
 			);
 			path = "App delegates";
+			sourceTree = "<group>";
+		};
+		1FCEFF482CD2FCB000B297E9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1FCEFF4A2CD2FDB300B297E9 /* btnLoading.json */,
+				1FCEFF382CD2E61A00B297E9 /* Assets.xcassets */,
+				1FCEFF3B2CD2E61A00B297E9 /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		1FCEFF492CD2FCDD00B297E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1FCEFF3D2CD2E61A00B297E9 /* LoginView.swift */,
+				1FCEFF4C2CD2FDFF00B297E9 /* Button.swift */,
+				1FCEFF462CD2E6D300B297E9 /* ProductView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9E9567314C1C3E2682652638 /* Frameworks */ = {
@@ -96,7 +118,6 @@
 				0439147D7B42548046A81C4B /* Pods-curlyBase.debug.xcconfig */,
 				750B832672510577E8C25D77 /* Pods-curlyBase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,6 +159,7 @@
 				};
 			};
 			buildConfigurationList = 1FCEFF0A2CD2DD1800B297E9 /* Build configuration list for PBXProject "curlyBase" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -161,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FCEFF422CD2E61A00B297E9 /* Assets.xcassets in Resources */,
+				1FCEFF4B2CD2FDB300B297E9 /* btnLoading.json in Resources */,
 				1FCEFF442CD2E61A00B297E9 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCEFF4D2CD2FDFF00B297E9 /* Button.swift in Sources */,
 				1FCEFF472CD2E6D300B297E9 /* ProductView.swift in Sources */,
 				1FCEFF3F2CD2E61A00B297E9 /* AppDelegate.swift in Sources */,
 				1FCEFF402CD2E61A00B297E9 /* SceneDelegate.swift in Sources */,
@@ -336,7 +360,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -399,7 +423,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
